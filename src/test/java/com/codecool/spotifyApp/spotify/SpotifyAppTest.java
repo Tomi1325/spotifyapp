@@ -45,6 +45,10 @@ class SpotifyAppTest {
         album1 = new Album("Album1", MusicStyle.POP);
         album2 = new Album("Album2", MusicStyle.JAZZ);
 
+        song1.play();
+        song2.play();
+        song2.play();
+
         album1.addSong(song1);
         album1.addSong(song2);
         album2.addSong(song3);
@@ -73,6 +77,13 @@ class SpotifyAppTest {
     void getPublishedTracksForAPodcaster(){
         List<Track> expected = List.of(podcast1,podcast2);
         List<Track> actual = spotifyApp.getPublishedTracks("Podcaster Joe");
+
+        Assertions.assertEquals(expected,actual);
+    }
+    @Test
+    void getMostPlayedSongs(){
+        Song expected = song2;
+        Song actual = spotifyApp.mostListenedSongs();
 
         Assertions.assertEquals(expected,actual);
     }

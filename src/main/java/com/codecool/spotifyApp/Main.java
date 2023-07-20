@@ -25,6 +25,10 @@ public class Main {
         Album album1 = new Album("Album1", MusicStyle.POP);
         Album album2 = new Album("Album2", MusicStyle.JAZZ);
 
+        song1.play();
+        song2.play();
+        song2.play();
+
         album1.addSong(song1);
         album1.addSong(song2);
         album2.addSong(song3);
@@ -46,6 +50,8 @@ public class Main {
 
         System.out.println(spotifyApp.getPublishedTracks("Singer Johnny"));
         System.out.println(spotifyApp.getPublishedTracks("Podcaster Jenny"));
+
+        System.out.println(spotifyApp.mostListenedSongs());
 
     }
 }

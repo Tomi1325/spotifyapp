@@ -14,4 +14,8 @@ public abstract class Track {
     public void play(){
         numberOfTimesPlayed++;
     }
+
+    public int getNumberOfTimesPlayed() {
+        return numberOfTimesPlayed;
+    }
 }

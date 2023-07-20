@@ -36,6 +36,10 @@ public class Singer extends Author {
         return songsWithSameName;
     }
 
+    public List<Album> getAlbumList() {
+        return albumList;
+    }
+
     @Override
     public List<Track> getAllPublished() {
         return getAllSong();

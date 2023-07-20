@@ -32,4 +32,14 @@ public class Album{
     public List<Song> getSongList() {
         return songList;
     }
+    public Song getSongWithMostListens(){
+        Song mostPlayedSong = songList.get(0);
+        int maxPlayTime = mostPlayedSong.getNumberOfTimesPlayed();
+        for (Song song : songList) {
+            if(song.getNumberOfTimesPlayed() > maxPlayTime){
+                mostPlayedSong = song;
+            }
+        }return mostPlayedSong;
+    }
+
 }
