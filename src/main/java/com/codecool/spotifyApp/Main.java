@@ -17,8 +17,8 @@ public class Main {
         Podcaster podcaster = new Podcaster("Podcaster Joe");
         Podcaster podcaster2 = new Podcaster("Podcaster Jenny");
         Song song1 = new Song("Song1",181,"song1Lyrics");
-        Song song2 = new Song("Song1",221,"song2Lyrics");
-        Song song4 = new Song("Song1",196,"song3Lyrics");
+        Song song2 = new Song("Song2",221,"song2Lyrics");
+        Song song3 = new Song("Song3",196,"song3Lyrics");
         Podcast podcast1 = new Podcast("Podcast1",1130,1);
         Podcast podcast2 = new Podcast("Podcast2",1330,2);
         Podcast podcast3 = new Podcast("Podcast3",920,3);
@@ -27,7 +27,7 @@ public class Main {
 
         album1.addSong(song1);
         album1.addSong(song2);
-        album2.addSong(song4);
+        album2.addSong(song3);
 
         singer.uploadAlbum(album1);
         singer2.uploadAlbum(album2);
